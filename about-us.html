@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="description" content="Botfolio" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About Us</title>
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/themify-icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="css/shortcodes.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/megamenu.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+</head>
+<style>
+    .ttm-bgcolor-skincolor,
+    .ttm-bgcolor-skincolor>.ttm-bg-layer,
+    .ttm-bgcolor-skincolor>.ttm-bg-layer>.ttm-col-wrapper-bg-layer-inner,
+    .ttm-icon_element-fill.ttm-icon_element-color-skincolor,
+    .ttm-btn-style-fill.ttm-btn-color-skincolor,
+    .ttm-btn.ttm-btn-style-border.ttm-btn-color-skincolor:not(.btn-inline):hover:after,
+    .ttm-btn.ttm-btn-style-fill.ttm-btn-color-dark:not(.btn-inline):hover:after,
+    .ttm-btn.ttm-btn-style-border.ttm-btn-color-skincolor:not(.btn-inline):hover:before,
+    .ttm-btn.ttm-btn-style-fill.ttm-btn-color-dark:not(.btn-inline):hover:before,
+    .ttm-btn.ttm-btn-style-fill.ttm-btn-color-white:hover:before,
+    .ttm-btn.ttm-btn-style-fill.ttm-btn-color-white:hover:after,
+    .ttm-bgcolor-darkgrey .ttm-btn.ttm-btn-style-fill.ttm-btn-color-white:not(.btn-inline):hover:after,
+    .ttm-bgcolor-darkgrey .ttm-btn.ttm-btn-style-fill.ttm-btn-color-white:not(.btn-inline):hover:before,
+    .ttm-bgcolor-grey .tooltip:after,
+    .ttm-bgcolor-grey [data-tooltip]:after,
+    .ttm-bgcolor-darkgrey .tooltip:after,
+    .ttm-bgcolor-darkgrey [data-tooltip]:after,
+    .ttm-textcolor-skincolor .tooltip:after,
+    .ttm-textcolor-skincolor [data-tooltip]:after,
+    .slick_slider.slick-dots-style1 .slick-dots li.slick-active button,
+    .slick_slider.slick-dots-style2 .slick-dots li.slick-active button,
+    .slick_slider.slick-arrows-style3 .slick-arrow:hover,
+    .slick_slider.slick-arrows-style4 .slick-arrow:hover,
+    .slick_slider.slick-arrows-style1 .slick-prev:hover,
+    .slick_slider.slick-arrows-style1 .slick-next:hover,
+    .header_cart .cart_count,
+    .heading-seperator span:before,
+    nav.main-menu ul.menu li ul.mega-submenu li a:before,
+    #site-header-menu .site-navigation .sep-img,
+    .ttm-header-style-03 .social-icons li a:hover,
+    .ttm-tabs.ttm-tab-style-01 ul.tabs li.active a,
+    .ttm-tabs.ttm-tab-style-01 ul.tabs li:hover a,
+    .side-menu a,
+    .ttm-pf-single-detail-box .ttm-pf-single-title h3:after,
+    .ttm-pf-single-detail-box ul li i,
+    .featured-imagebox-services.style1 .featured-content .ttm-btn:hover span,
+    .featured-icon-box.icon-align-top-content.style2:before,
+    .featured-icon-box.icon-align-top-content.style2:hover a.di_link,
+    .featured-imagebox-portfolio.style1 .ttm-media-link a,
+    .progress-bar-inner .progress-bar.progress-bar-color-bar_skincolor:before,
+    .testimonials.ttm-testimonial-box-view-style2 .testimonial-content blockquote::before,
+    .testimonials.ttm-testimonial-box-view-style3 .testimonial-content .quote-icon::after,
+    .featured-imagebox-post.style3 .featured-content-post .cat_block-wrapper,
+    .featured-imagebox-post.style3 .featured-title:before,
+    .social-icons.circle li>a:hover,
+    .featured-icon-box.icon-align-top-content.style3:before,
+    .toggle.ttm-toggle_style_border .toggle-title a.active,
+    .ttm-toggle-title-bgcolor-skincolor,
+    .ttm-tabs.ttm-tab-style-03 ul.tabs li.active a,
+    .ttm-tabs.ttm-tab-style-03 ul.tabs li:hover a,
+    .ttm-tabs.ttm-tab-style-vertical ul.tabs li.active a,
+    .ttm-tabs.ttm-tab-style-vertical ul.tabs li:hover a,
+    .testimonials.ttm-testimonial-box-view-style4 .testimonial-avatar:before,
+    .widget.widget-nav-menu ul li:hover a:before,
+    .widget.widget-nav-menu ul li.active a:before,
+    .featured-imagebox-portfolio.style2 .ttm-media-link a:hover,
+    .featured-imagebox-portfolio.style3 .ttm-media-link a.ttm_link,
+    .featured-imagebox-portfolio.style4 .ttm-box-view-overlay.ttm-portfolio-box-view-overlay:before,
+    .featured-imagebox-portfolio.style5 .ttm-box-view-overlay.ttm-portfolio-box-view-overlay:before,
+    article.ttm-blog-classic .ttm-box-post-date .ttm-entry-date,
+    .ttm-blog-classic .entry-header .entry-title:before,
+    .ttm-blog-classic .ttm-blog-classic-content:before,
+    .widget .tagcloud a:hover,
+    .featured-imagebox-post.style4 .ttm-box-post-date,
+    .featured-imagebox-post.style4 .post-header:before,
+    .ttm-progress-bar .progress-bar.progress-bar-color-bar_skincolor,
+    .featured-imagebox-services.style4:hover .more-button,
+    .featured-imagebox-services.style5 .featured-header .featured-title:before,
+    .featured-imagebox-team.style2 .media-block .social-icons li a,
+    .featured-imagebox-team.style1 .media-block .social-icons li a:hover,
+    .featured-imagebox-team.style2 .media-block a.media-btn:hover,
+    .featured-imagebox-team.style3 .featured-content:after,
+    .featured-imagebox-team.style3 .featured-content:before,
+    .featured-imagebox-team.style3 .media-block .social-icons li a:hover,
+    .featured-imagebox-team.style4 .media-block a.media-btn,
+    .featured-imagebox-team.style4 .media-block .social-icons li a:hover,
+    .pagination-block .page-numbers:hover,
+    .pagination-block .page-numbers.current,
+    #totop.top-visible,
+    .progress-bar-color-bar_white.progress-bar,
+    .progress-bar-color-bar_white.progress-bar:before,
+    .ttm-progress-bar .progress-bar.progress-bar-color-bar_skincolor,
+    .progress-bar-inner .progress-bar.progress-bar-color-bar_skincolor:before,
+    .footer .widget .widget-title:before,
+    .footer .widget .widget-title:after,
+    .testimonials.ttm-testimonial-box-view-style1:hover .testimonial-content:after,
+    .featured-icon-box.style3:hover .featured-icon:before,
+    .widget.widget-nav-menu ul li.active a,
+    .widget.widget-nav-menu ul li:hover a,
+    .ttm-fid.inside.ttm-fid-with-icon.style1 .ttm-fid-icon-wrapper i,
+    .featured-imagebox-post.style1 .ttm-box-post-date,
+    .post-category,
+    .testimonials.ttm-testimonial-box-view-style2 .testimonial-content:before,
+    .featured-imagebox-team.style2 .media-block .media-btn,
+    .sidebar .widget-area .widget:before,
+    .sidebar .widget.widget-search .search-form .btn[type="submit"] {
+        background-color: #ebf5f5;
+    }
+
+    .sep_line.ttm-bgcolor-darkgrey {
+        background-color: #ebf5f5 !IMPORTANT;
+    }
+
+    .second-footer .container {
+        position: inherit;
+    }
+
+    .copyright {
+        padding-top: 0px;
+        padding-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .second-footer .widget-area .widget {
+        padding: 30px 0 45px;
+    }
+
+    .sep_line.ttm-bgcolor-darkgrey {
+        background-color: #ff922a;
+    }
+
+    .site-branding img {
+        max-height: 55px !important;
+
+    }
+
+    .footer .footer-logo img {
+        max-height: 80px;
+        width: 100px;
+    }
+</style>
+
+<body>
+
+    <div class="page">
+
+        <header id="masthead" class="header ttm-header-style-01">
+
+            <div id="site-header-menu" class="site-header-menu ttm-bgcolor-white">
+                <div class="site-header-menu-inner ttm-stickable-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+
+                                <div class="site-navigation d-flex flex-row align-items-center justify-content-between">
+
+                                    <div class="site-branding ">
+                                        <a class="home-link" href="index.html" title="Axacus" rel="home">
+                                            <img id="logo-img" class="img-fluid auto_size" src="images/Home/Logo.png"
+                                                alt="logo-img">
+                                        </a>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <div class="btn-show-menu-mobile menubar menubar--squeeze">
+                                            <span class="menubar-box">
+                                                <span class="menubar-inner"></span>
+                                            </span>
+                                        </div>
+
+                                        <nav class="main-menu menu-mobile" id="menu">
+                                            <ul class="menu">
+                                                <li><a href="index.html">Home</a></li>
+                                                <li class="active"><a href="about-us.html">About US</a></li>
+                                                <li><a href="./images/BTF_whitepaper.pdf" target="_blank">Whitepaper</a></li>
+                                                <li><a href="./images/Botfolio_PPT.pdf" target="_blank">PPT</a></li>
+                                                <li><a href="contact-us.html">Contact US</a></li>
+
+                                            </ul>
+                                        </nav>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+
+
+        <div class="ttm-page-title-row">
+            <div class="ttm-page-title-row-inner ttm-bgcolor-darkgrey"
+                style="background-image: url(images/About/MainBanner.png); background-attachment: inherit; background-repeat: no-repeat;background-size: cover; padding-top: 67px;" id="abtmainbanner">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12">
+                            <div class="page-title-heading">
+                                <h3 class="title">ABOUT US</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="site-main">
+
+            <section class="ttm-row about-section clearfix" id="abtsec2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-6 col-sm-8">
+                            <div class="ttm_single_image-wrapper p-10">
+                                <img class="img-fluid w-100" src="images/About/Sec02Graphics.png" alt="single-06">
+                            </div>
+                            <div id="abtanimation">
+                                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_tbimot2z.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop  autoplay></lottie-player>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 col-md-12 col-xs-12">
+                            <div class="padding_left30 padding_top40 res-991-padding_left0">
+
+                                <div class="section-title">
+                                    <div class="title-header">
+                                        <h2 class="title"> TOKEN OF WORTH</h2>
+                                    </div>
+                                    <div class="title-desc">
+                                        <p>A token holds it's value and a marketplace image. One will always have a concern about the image the graph and most importantly the growth their asset is representing. The value varies with the ability as well as demand and supply. Botfolio has raised their values in the current marketplace by improving its functionality and with proper circulation of utility in the market.
+                                        </p>
+                                    </div>
+                                    <div class="title-header">
+                                        <h2 class="title" style="font-size: 24px;">BTF - A name in crypto world</h2>
+                                    </div>
+                                    <div class="title-desc">
+                                        <p>BTF tokens again in the popularity interest of millions of people by their circulating utility and smooth framework of exchange. In the present world of technology and development the generations are confused between choosing the right coin for their future investment.</p>
+                                        <p>Tokens also have a static point of view of controlling the value and image in the market. Availability of token and sale purchase and buying of tokens leads to this circularity of utility and indirectly put an impact on trade and exchange.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ttm-row about-section clearfix" id="abtsec2-text">
+                <div class="container">
+             </div>
+            </section>
+
+
+            <section class="ttm-row services-section ttm-bgcolor-grey clearfix" id="abtsec3">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="section-title title-style-center_text">
+                                <div class="title-header">
+                                    <h2 class="title" style="color: #fcbd1a;">OUR GEMSTONES</h2>
+                                </div>
+                                <div class="title-desc">
+                                    <p style="color: #fffdfd;">Botfolio has a set of its best functionalities which leads the path of success. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="row no-gutters">
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+
+                                    <div class="featured-icon-box style7">
+                                        <div class="featured-icon">
+                                            <div
+                                                class="ttm-icon ttm-icon_element-fill ttm-icon_element-size-lg ttm-icon_element-color-skincolor ttm-icon_element-style-rounded">
+
+                                                <img src="images/About/01.png" alt="single_04"
+                                                    style="height: 119px; margin-left: -10px;margin-top: -10px;">
+                                            </div>
+                                        </div>
+                                        <div class="sep_line ttm-bgcolor-skincolor"></div>
+                                        <div class="featured-content">
+                                            <div class="featured-title">
+                                                <h3 style="color: #fcbd1a;">BOT TRADING</h3>
+                                            </div>
+                                            <div class="featured-desc">
+                                                <p style="color: #fffdfd;">AI based training with <br> permutation  <br> and combinations </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+
+                                    <div class="featured-icon-box style7">
+                                        <div class="featured-icon">
+                                            <div class="ttm-icon ttm-icon_element-fill ttm-icon_element-size-lg ttm-icon_element-color-darkgrey ttm-icon_element-style-rounded"
+                                                style="border: 1px solid #ebf5f5; background-color: #ebf5f5;">
+
+                                                <img src="images/About/02.png" alt="single_04"
+                                                    style="height: 119px; margin-left: -10px;margin-top: -10px;">
+                                            </div>
+                                        </div>
+                                        <div class="sep_line ttm-bgcolor-darkgrey"></div>
+                                        <div class="featured-content">
+                                            <div class="featured-title">
+                                                <h3 style="color: #fcbd1a;">MINI EXCHANGE</h3>
+                                            </div>
+                                            <div class="featured-desc">
+                                                <p style="color: #fffdfd;">The smooth framework  <br>and best  <br>quality of exchange</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+
+                                    <div class="featured-icon-box style7">
+                                        <div class="featured-icon">
+                                            <div
+                                                class="ttm-icon ttm-icon_element-fill ttm-icon_element-size-lg ttm-icon_element-color-skincolor ttm-icon_element-style-rounded">
+
+                                                <img src="images/About/03.png" alt="single_04"
+                                                    style="height: 119px; margin-left: -10px;margin-top: -10px;">
+                                            </div>
+                                        </div>
+                                        <div class="sep_line ttm-bgcolor-skincolor"></div>
+                                        <div class="featured-content">
+                                            <div class="featured-title">
+                                                <h3 style="color: #fcbd1a;">PORTAL GAMING</h3>
+                                            </div>
+                                            <div class="featured-desc">
+                                                <p style="color: #fffdfd;">We are  bridge between <br> the gaming world  <br>and gaming personalities </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-sm-6">
+                                    <div class="featured-icon-box style7">
+                                        <div class="featured-icon">
+                                            <div class="ttm-icon ttm-icon_element-fill ttm-icon_element-size-lg ttm-icon_element-color-darkgrey ttm-icon_element-style-rounded"
+                                                style="border: 1px solid #ebf5f5; background-color: #ebf5f5;">
+
+                                                <img src="images/About/04.png" alt="single_04"
+                                                    style="height: 119px; margin-left: -10px;margin-top: -10px;">
+                                            </div>
+                                        </div>
+                                        <div class="sep_line ttm-bgcolor-darkgrey"></div>
+                                        <div class="featured-content">
+                                            <div class="featured-title">
+                                                <h3 style="color: #fcbd1a;">BTF</h3>
+                                            </div>
+                                            <div class="featured-desc">
+                                                <p style="color: #fffdfd;">A name in tokens among <br> the world which leads<br> the pathway of multiplying capitals</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="ttm-row team-section clearfix" style="display: none;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="section-title title-style-center_text">
+                                <div class="title-header">
+                                    <h3>TEAM SUPPORT</h3>
+                                    <h2 class="title">We Bringing Out The Best</h2>
+                                </div>
+                                <div class="title-desc">
+                                    <p>We are specialists in both economics and finance. We apply full range of talent
+                                        to creating perfect solution for each client’s needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row slick_slider"
+                        data-slick='{"slidesToShow": 4, "slidesToScroll": 1, "arrows":false, "dots":false, "autoplay":true, "infinite":true, "responsive": [{"breakpoint":992,"settings":{"slidesToShow": 3}}, {"breakpoint":778,"settings":{"slidesToShow": 2}}, {"breakpoint":460,"settings":{"slidesToShow": 1}}]}'>
+                        <div class="ttm-box-col-wrapper col-lg-3">
+
+                            <div class="featured-imagebox featured-imagebox-team style2 border-rad_5">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid" src="images/team-member/team-img01.jpg" alt="image">
+                                </div>
+                                <div class="featured-content featured-content-team">
+                                    <div class="featured-title">
+                                        <h3><a href="team-details.html">Melika Fonals</a></h3>
+                                    </div>
+                                    <div class="team-position">Migration Agent</div>
+                                    <div class="featured-iconbox ttm-media-link">
+                                        <div class="media-block">
+                                            <div class="media-btn"><i class="ti ti-sharethis"></i></div>
+                                            <ul class="social-icons list-inline">
+                                                <li class="social-facebook"><a href="#"><i
+                                                            class="ti ti-facebook"></i></a></li>
+                                                <li class="social-twitter"><a href="#"><i
+                                                            class="ti ti-twitter-alt"></i></a></li>
+                                                <li class="social-instagram"><a href="#"><i
+                                                            class="ti ti-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ttm-box-col-wrapper col-lg-3">
+
+                            <div class="featured-imagebox featured-imagebox-team style2 border-rad_5">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid" src="images/team-member/team-img02.jpg" alt="image">
+                                </div>
+                                <div class="featured-content featured-content-team">
+                                    <div class="featured-title">
+                                        <h3><a href="team-details.html">Sophia Arthur</a></h3>
+                                    </div>
+                                    <div class="team-position">Migration Agent</div>
+                                    <div class="featured-iconbox ttm-media-link">
+                                        <div class="media-block">
+                                            <div class="media-btn"><i class="ti ti-sharethis"></i></div>
+                                            <ul class="social-icons list-inline">
+                                                <li class="social-facebook"><a href="#"><i
+                                                            class="ti ti-facebook"></i></a></li>
+                                                <li class="social-twitter"><a href="#"><i
+                                                            class="ti ti-twitter-alt"></i></a></li>
+                                                <li class="social-instagram"><a href="#"><i
+                                                            class="ti ti-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ttm-box-col-wrapper col-lg-3">
+
+                            <div class="featured-imagebox featured-imagebox-team style2 border-rad_5">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid" src="images/team-member/team-img03.jpg" alt="image">
+                                </div>
+                                <div class="featured-content featured-content-team">
+                                    <div class="featured-title">
+                                        <h3><a href="team-details.html">Robert Walter</a></h3>
+                                    </div>
+                                    <div class="team-position">Migration Agent</div>
+                                    <div class="featured-iconbox ttm-media-link">
+                                        <div class="media-block">
+                                            <div class="media-btn"><i class="ti ti-sharethis"></i></div>
+                                            <ul class="social-icons list-inline">
+                                                <li class="social-facebook"><a href="#"><i
+                                                            class="ti ti-facebook"></i></a></li>
+                                                <li class="social-twitter"><a href="#"><i
+                                                            class="ti ti-twitter-alt"></i></a></li>
+                                                <li class="social-instagram"><a href="#"><i
+                                                            class="ti ti-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ttm-box-col-wrapper col-lg-3">
+
+                            <div class="featured-imagebox featured-imagebox-team style2 border-rad_5">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid" src="images/team-member/team-img04.jpg" alt="image">
+                                </div>
+                                <div class="featured-content featured-content-team">
+                                    <div class="featured-title">
+                                        <h3><a href="team-details.html">Michael Grey</a></h3>
+                                    </div>
+                                    <div class="team-position">Migration Agent</div>
+                                    <div class="featured-iconbox ttm-media-link">
+                                        <div class="media-block">
+                                            <div class="media-btn"><i class="ti ti-sharethis"></i></div>
+                                            <ul class="social-icons list-inline">
+                                                <li class="social-facebook"><a href="#"><i
+                                                            class="ti ti-facebook"></i></a></li>
+                                                <li class="social-twitter"><a href="#"><i
+                                                            class="ti ti-twitter-alt"></i></a></li>
+                                                <li class="social-instagram"><a href="#"><i
+                                                            class="ti ti-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ttm-box-col-wrapper col-lg-3">
+
+                            <div class="featured-imagebox featured-imagebox-team style2 border-rad_5">
+                                <div class="featured-thumbnail">
+                                    <img class="img-fluid" src="images/team-member/team-img05.jpg" alt="image">
+                                </div>
+                                <div class="featured-content featured-content-team">
+                                    <div class="featured-title">
+                                        <h3><a href="team-details.html">John Doe</a></h3>
+                                    </div>
+                                    <div class="team-position">Migration Agent</div>
+                                    <div class="featured-iconbox ttm-media-link">
+                                        <div class="media-block">
+                                            <div class="media-btn"><i class="ti ti-sharethis"></i></div>
+                                            <ul class="social-icons list-inline">
+                                                <li class="social-facebook"><a href="#"><i
+                                                            class="ti ti-facebook"></i></a></li>
+                                                <li class="social-twitter"><a href="#"><i
+                                                            class="ti ti-twitter-alt"></i></a></li>
+                                                <li class="social-instagram"><a href="#"><i
+                                                            class="ti ti-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <section class="ttm-row about-section clearfix" style="background: #fcbd1a;" id="abtsec4">
+            <div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-xs-12" style="padding-left: 77px;" id="abtsec4-1">
+                        <div class="padding_top40 res-991-padding_top0 res-991-padding_bottom50" style="padding-right: 29px;">
+
+                            <div class="section-title">
+                                <div class="title-header">
+                                    <h3 style="color: #1d2131;">WHY CHOOSE US ?</h3>
+                                    <h2 class="title" style="color: #fffeff;">BOT TRADING AND TECHNOLOGIES </h2>
+                                </div>
+                                <div class="title-desc">
+                                    <p>Bot trading is basically a concept of robot that will take by and sell Trade automatically. In this training one can understand the flow of market and also he can see the role of permutation and combinations.By this method I use her and get proper training and can set their hands on the market. What trading also has a variety in it known as copy trading in this same chart is used to follow with the same permutation combinations and wait for the right time to take off the tokens.
+                                    </p>
+                                    <p>
+                                        Like stock exchanges, crypto traders can buy, sell, and convert cryptocurrencies on crypto exchanges. There  are currently three types of cryptocurrency exchanges —centralised exchanges (CEXs), decentralised exchanges (DEX) and hybrid exchanges (HEX). Cryptocurrency exchanges are privately-owned platforms that facilitate the trading of cryptocurrencies for other crypto assets, including digital and fiat currencies and NFTs.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12" style="background: #e6e9f8;">
+                        <div class="d-sm-flex">
+                            <div class="ttm_single_image-wrapper text-left">
+                                <img class="img-fluid" src="images/About/Sec04graphics.png" alt="single-07" height="100%"
+                                    width="100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer widget-footer ttm-bgcolor-darkgrey ttm-textcolor-white clearfix">
+
+            <div class="second-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 widget-area">
+                            <div class="widget widget_text clearfix">
+                                <img class="img-fluid" src="images/Home/Logo.png" alt="logo"
+                                    style="height: 65px; width: 240px; margin-left: -6px; margin-bottom: 14px;"><br>
+                                <div class="textwidget widget-text">
+                                    <p>
+                                        The need for intermediaries is eliminated because blockchain transactions happen
+                                        on a single network.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 widget-area" id="footer2">
+                            <div class="widget widget_text clearfix">
+                                <h3 class="widget-title">Social Media</h3>
+                                <div class="textwidget widget-text">
+                                    <p>
+                                        <i class="fa fa-envelope" style="color: #ffc01a;"></i> info@botfoliotrade.co
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-envelope" style="color: #ffc01a;"></i>
+                                        support@botfoliotrade.co
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer-text copyright ttm-textcolor-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-lg-flex align-items-center justify-content-between text-center">
+                                <div class="order-1">
+                                    <div class="cpy-text">Copyright © 2023 Botfolio. All rights reserved.</div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <a id="totop" href="#top" style="background-color: rgb(252 189 26);">
+            <i class="fa fa-angle-up"></i>
+        </a>
+
+    </div>
+
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-migrate-3.3.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery-waypoints.js"></script>
+    <script src="js/jquery-validate.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/numinate.min.js"></script>
+    <script src="js/imagesloaded.min.js"></script>
+    <script src="js/jquery-isotope.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

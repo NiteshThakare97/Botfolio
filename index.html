@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="" />
+    <meta name="description" content="Botfolio" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Botfolio</title>
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="css/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="css/themify-icons.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css">
+    <link rel="stylesheet" type="text/css" href="css/shortcodes.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/megamenu.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&amp;display=swap" rel="stylesheet">
+</head>
+<style>
+    #modal {
+        position: fixed;
+        font-family: Arial, Helvetica, sans-serif;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        z-index: 99999;
+        height: 100%;
+        width: 100%;
+    }
+
+    .modalconent {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-image: url(./images/card-ico.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 500px;
+        height: 600px;
+        padding: 20px;
+        border: 3px solid white;
+        border-radius: 10px;
+    }
+
+    #modal button {
+        padding: 5px 11px 11px;
+        font-size: 15px;
+    }
+
+    #buynow {
+        margin-top: 500px;
+        margin-left: 187px;
+    }
+
+    @media only screen and (max-width: 590px) {
+        .modalconent {
+            width: 330px;
+            height: 395px;
+        }
+
+        #buynow {
+            margin-top: 300px;
+            margin-left: 99px;
+        }
+    }
+
+
+
+
+    .second-footer .container {
+        position: inherit;
+    }
+
+    .copyright {
+        padding-top: 0px;
+        padding-bottom: 8px;
+        font-size: 16px;
+    }
+
+    .second-footer .widget-area .widget {
+        padding: 30px 0 45px;
+    }
+
+    .section-title .title-desc p {
+        font-size: 18px;
+
+    }
+
+    .featured-icon-box.style9 .ttm-icon:before {
+
+        background-color: #081e2f00 !important;
+
+    }
+
+    #video-background {
+
+        right: 0;
+        bottom: 0;
+        min-width: 100%;
+        min-height: 75%;
+        width: auto;
+        height: auto;
+        z-index: -100;
+    }
+
+    @media (max-width: 991px) {
+        .section-title h2.title {
+            font-size: 22px;
+            line-height: 36px;
+            color: rgb(10, 10, 10);
+        }
+    }
+
+    .ttm-bgcolor-grey,
+    .ttm-bgcolor-grey>.ttm-bg-layer,
+    .ttm-bgcolor-grey>.ttm-bg-layer>.ttm-col-wrapper-bg-layer-inner,
+    .ttm-btn-style-fill.ttm-btn-color-grey,
+    .ttm-icon_element-fill.ttm-icon_element-color-grey,
+    .ttm-toggle-title-bgcolor-grey .toggle-title,
+    .header_search #search_query_top,
+    .widget.widget-nav-menu ul li a,
+    .featured-imagebox-portfolio.style3 .featured-content,
+    .sidebar .widget-area.widget_border .widget.widget-contact,
+    .widget-Categories li span,
+    .comment-body,
+    .ttm-pf-single-detail-box ul,
+    .ttm-pricing-plan {
+        background-color: #010e1600;
+    }
+
+    .col-bg-img-six.ttm-col-bgimage-yes>.ttm-col-wrapper-bg-layer {
+
+        background-size: contain;
+
+    }
+
+    .ttm-right-span>.ttm-col-wrapper-bg-layer {
+
+        margin-right: 0px !important;
+
+    }
+
+    .ttm-bg.ttm-col-bgcolor-yes.ttm-bgcolor-grey.ttm-left-span.spacing-7.res-767-mr_15 {
+        background-color: #e6913700;
+    }
+
+    .box-shadow {
+        box-shadow: 0 0 9px 0 rgb(29 33 67 / 0%);
+    }
+
+    .ttm-bgcolor-white,
+    .ttm-bgcolor-white>.ttm-bg-layer,
+    .ttm-bgcolor-white>.ttm-bg-layer>.ttm-col-wrapper-bg-layer-inner,
+    .ttm-icon_element-fill.ttm-icon_element-color-white,
+    .ttm-bgcolor-darkgrey .ttm-btn.ttm-btn-style-fill.ttm-btn-color-skincolor:not(.btn-inline):hover:before,
+    .ttm-btn.ttm-btn-style-border.ttm-btn-color-white:not(.btn-inline):hover:before,
+    .ttm-bgcolor-darkgrey .slick_slider.slick-arrows-style3 .slick-arrow:hover,
+    .ttm-bgcolor-skincolor .slick_slider.slick-arrows-style3 .slick-arrow:hover,
+    .ttm-btn-style-fill.ttm-btn-color-white,
+    .featured-imagebox-team.style2 .media-block .social-icons li a:hover,
+    .ttm-icon_element-fill.ttm-icon_element-color-white,
+    .ttm-bgcolor-skincolor .heading-seperator span:before,
+    .featured-imagebox-portfolio.style1 .ttm-media-link a:hover,
+    .ttm-progress-bar .progress-bar.progress-bar-color-bar_white,
+    .progress-bar-color-bar_white,
+    .ttm-toggle-title-bgcolor-white .toggle-title a {
+        background-color: #030c1d;
+    }
+
+    .featured-icon-box.style5 {
+        padding: 60px 0;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .overlay_banner .slide .slide__content--headings h3,
+    .overlay_banner .slide .slide__content--headings h2 {
+
+        font-weight: 700;
+
+    }
+
+    .site-branding img {
+        max-height: 55px !important;
+    }
+
+    .footer .footer-logo img {
+        max-height: 80px;
+        width: 100px;
+    }
+</style>
+
+<body>
+
+    <div class="page">
+
+        <div id="preloader" class="blobs-wrapper">
+            <div class="ttm-bgcolor-skincolor loader-blob"></div>
+        </div>
+
+
+        <header id="masthead" class="header ttm-header-style-01"> 
+            <div id="site-header-menu" class="site-header-menu ttm-bgcolor-white">
+                <div class="site-header-menu-inner ttm-stickable-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+
+                                <div class="site-navigation d-flex flex-row align-items-center justify-content-between">
+
+                                    <div class="site-branding ">
+                                        <a class="home-link" href="index-2.html" title="Axacus" rel="home">
+                                            <img id="logo-img" class="img-fluid auto_size" src="images/Home/Logo.png"
+                                                alt="logo-img">
+                                        </a>
+                                    </div>
+                                    <div class="d-flex flex-row">
+                                        <div class="btn-show-menu-mobile menubar menubar--squeeze">
+                                            <span class="menubar-box">
+                                                <span class="menubar-inner"></span>
+                                            </span>
+                                        </div>
+
+                                        <nav class="main-menu menu-mobile" id="menu">
+                                            <ul class="menu">
+                                                <li class="active"><a href="index.html">Home</a></li>
+                                                <li><a href="about-us.html">About Us</a></li>
+                                                <li><a href="./images/BTF_whitepaper.pdf" target="_blank">Whitepaper</a></li>
+                                                <li><a href="./images/Botfolio_PPT.pdf" target="_blank">PPT</a></li>
+                                                <li><a href="contact-us.html">Contact US</a></li>
+                                            </ul>
+                                        </nav>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <div class="banner_slider overlay_banner">
+            <div class="slide">
+                <div id="mainbannertext">
+                    <h3 style="color: #fff;font-weight: 100;">A PLATFORM</h3>
+                    <h3 style="color: #fcbd1a;font-size: 68px;" id="mainbannertext-1">EMPOWERING</h3>
+                    <h3 style="color: #fff;font-weight: 100;">TRADING & UTILITY</h3>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="site-main">
+
+            <section class="ttm-row broken-section ttm-bgcolor-skincolor clearfix"
+                style="    background-color: #fcbd1a;" id="homesec2">
+                <div class="container-fluid">
+                    <div class="row row-equal-height">
+                        <div class="col-xl-9 col-md-12" style="align-items: center;">
+                            <div
+                                class="ttm-bg ttm-col-bgcolor-yes ttm-left-span ttm-bgcolor-skincolor w-100 padding_left40 res-991-padding_left0 text-left">
+                                <div class="ttm-col-wrapper-bg-layer ttm-bg-layer">
+                                </div>
+                                <div class="layer-content featuredbox-number">
+                                    <div class="row ttm-vertical_sep">
+                                        <div class="col-lg-4 col-sm-6 col-xs-12">
+
+                                            <div class="featured-icon-box icon-align-before-content style4">
+                                                <div class="featured-icon">
+                                                    <div
+                                                        class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-white ttm-icon_element-size-lg">
+
+                                                        <img class="img-fluid" src="images/Home/BOT.png" alt="single_04"
+                                                            height="100%" width="100%"
+                                                            style="height: 56px; width: 206px;" id="imgicon1">
+
+                                                    </div>
+                                                </div>
+                                                <div class="featured-content">
+                                                    <div class="featured-title">
+                                                        <h3 style="color: #132431;">BOT TRADING</h3>
+                                                    </div>
+                                                    <div class="featured-desc">
+                                                        <p>Botfolio have an advantage technology by which and artificial
+                                                            intelligence operated robot performs.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-xs-12">
+
+                                            <div class="featured-icon-box icon-align-before-content style4">
+                                                <div class="featured-icon">
+                                                    <div
+                                                        class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-white ttm-icon_element-size-lg">
+
+                                                        <img class="img-fluid" src="images/Home/Trading.png"
+                                                            alt="single_04" height="100%" width="100%"
+                                                            style="height: 50px; width: 177px;"  id="imgicon2">
+
+                                                    </div>
+                                                </div>
+                                                <div class="featured-content">
+                                                    <div class="featured-title">
+                                                        <h3 style="color: #132431;">Mini Exchange</h3>
+                                                    </div>
+                                                    <div class="featured-desc">
+                                                        <p> Exchange plays a dynamic and important role in
+                                                            cryptocurrency and trading.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-lg-4 col-sm-6 col-xs-12">
+
+                                            <div class="featured-icon-box icon-align-before-content style4">
+                                                <div class="featured-icon">
+                                                    <div
+                                                        class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-white ttm-icon_element-size-lg">
+
+                                                        <img class="img-fluid" src="images/Home/gaming.png"
+                                                            alt="single_04" height="100%" width="100%"
+                                                            style="height: 41px; width: 141px;" id="imgicon3">
+
+                                                    </div>
+                                                </div>
+                                                <div class="featured-content">
+                                                    <div class="featured-title">
+                                                        <h3 style="color: #132431;">Gaming portal</h3>
+                                                    </div>
+                                                    <div class="featured-desc">
+                                                        <p>We have a platform for the community of the gamers and for
+                                                            their interactions.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-xs-12" style="justify-content: center;">
+                            <div
+                                class="ttm-bg ttm-col-bgcolor-yes ttm-right-span ttm-bgcolor-darkgrey w-100 margin_left40 text-left res-991-margin_top40">
+                                <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
+                                <div class="layer-content">
+
+                                    <div
+                                        class="featured-icon-box icon-align-before-content style5 margin_right20 ml_40 res-991-margin_right0">
+                                        <div class="featured-icon">
+                                            <div class="ttm-icon ttm-icon_element-fill ttm-icon_element-color-skincolor ttm-icon_element-size-sm ttm-icon_element-style-rounded"
+                                                style="background-color: #fff;">
+                                                <i class="fa fa-globe" style="color: #223645;"></i>
+                                            </div>
+                                        </div>
+                                        <div class="featured-content" style="padding-left: 0px;">
+                                            <div class="featured-desc">
+                                                <p>E-mail ID</p>
+                                            </div>
+                                            <div class="featured-title">
+                                                <h3 style="font-size: 21px;"><a href="cdn-cgi/l/email-protection.html"
+                                                        class="__cf_email__"
+                                                        style="color: #132431;">info@botfoliotrade.co</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="ttm-row broken-section clearfix"
+                style="background-image: url(./images/Home/Section02BG.png); background-attachment: inherit;background-size: cover;" id="homesec3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-7 mx-auto">
+                                    <div
+                                        class="ttm-bg ttm-col-bgcolor-yes ttm-bgcolor-grey ttm-left-span spacing-7 res-767-mr_15">
+                                        <div class="ttm-col-wrapper-bg-layer ttm-bg-layer"></div>
+                                        <div class="layer-content">
+
+                                            <div class="ttm_single_image-wrapper">
+                                                <div
+                                                    class="d-inline-block p-10 border-rad_6 position-relative z-index-1 box-shadow mr_300 res-767-margin_right0">
+                                                    <img class="img-fluid" src="images/Home/Section02Graphics.png"
+                                                        alt="single_04">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div
+                                        class="padding_top100 margin_top15 res-991-margin_top0 res-991-padding_top40 res-991-padding_bottom60 ml_25 res-1199-margin_left0">
+
+                                        <div class="section-title">
+                                            <div class="title-header">
+
+                                                <h2 class="title">BOTFOLIO AND ITS<br> TECHNICALITIES</h2>
+                                            </div>
+                                            <div class="title-desc">
+                                                <p>
+                                                    Botfolio has a variety of technicians and some unexpected
+                                                    technologies which provide its investors and users unexpected
+                                                    results. The tokens are well furnished and have capabilities for
+                                                    leading it to the point of utility. It will be very effective and
+                                                    essential for someone to hold BTF tokens
+                                                </p>
+                                                <p>
+                                                    Botfolio also works in technology by which training its process and
+                                                    its outcome can be directed to a certain level. We also have
+                                                    numerous of methods so that the graphical representation and
+                                                    possible outcomes of a result can be predicted.
+                                                </p>
+                                                <p>We also have our hands on gaming and trading utilities for the
+                                                    community of gamers. We also work as an interacting framework for
+                                                    the gamer community. Training in multifunctionality also delivers
+                                                    the mode of transaction and the level of comfort to its users.</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="ttm-horizontal_sep width-100 margin_top40"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="ttm-row services-section ttm-bgcolor-darkgrey bg-img10 clearfix"
+                style="background-image: url(images/Home/Sec03BG.png); background-attachment: inherit;background-size: cover;" id="homesec4-1">
+                <div class="container" style="padding-top: 7px; padding-bottom: 96px;">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="section-title style2">
+                                <div class="title-header">
+                                    <h3 style="color: #fff;">what we offer</h3>
+                                    <h2 class="title">TRADING FUNCTIONALITY</h2>
+                                    <p>Botfolio facilitates the all time process with <br> artificial intelligence
+                                        making it
+                                        easier to invest</p>
+                                </div>
+                                <div class="title-desc">
+                                    <script
+                                        src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+                                    <lottie-player
+                                        src="https://lottie.host/2a1d7f91-5f5c-4207-b3ce-377469b248d1/2ugoRuGdJN.json"
+                                        background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                                        autoplay></lottie-player>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-equal-height">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+
+                            <div class="featured-icon-box icon-align-top-content style9">
+                                <div class="featured-icon">
+                                    <div
+                                        class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+                                        <img class="img-fluid" src="images/Home/settings.png" alt="single_04"
+                                            height="100%" width="100%">
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>Token as utility</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>The most efficient and perfect way for trading is to trade in utilities and
+                                            enrich your investment and put growth in your capital. Investment should
+                                            always be planned as a tree that will be strong enough in the tornadoes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+
+                            <div class="featured-icon-box icon-align-top-content style9">
+                                <div class="featured-icon">
+                                    <div
+                                        class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+                                        <img class="img-fluid" src="images/Home/video-game.png" alt="single_04"
+                                            height="100%" width="100%">
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>Gaming providers</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>By providing markets where anybody can sell their products and services,
+                                            We provide a pathway between two Gamers community and multiple gamers so
+                                            that they can perform together and lead a way. We also have a variety of
+                                            options for trading purchase in Gamming scenarios.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+
+                            <div class="featured-icon-box icon-align-top-content style9">
+                                <div class="featured-icon">
+                                    <div
+                                        class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+                                        <img class="img-fluid" src="images/Home/loop-arrow.png" alt="single_04"
+                                            height="100%" width="100%">
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>Exchange</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>Exchange plays a very important role in the world of trading and commerce. In
+                                            terms when dealing with cryptocurrencies for an exchange and stock market
+                                            there should be a trusted and convenient source for exchange.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+
+                            <div class="featured-icon-box icon-align-top-content style9">
+                                <div class="featured-icon">
+                                    <div
+                                        class="ttm-icon ttm-icon_element-onlytxt ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+                                        <img class="img-fluid" src="images/Home/nft.png" alt="single_04" height="100%"
+                                            width="100%">
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h3>NFTs</h3>
+                                    </div>
+                                    <div class="featured-desc">
+                                        <p>The trade of exchange and purchase in the gaming scenario should be done with
+                                            proper utility and with NFTs. There are options of NFTs in the scenario of
+                                            Gamming .</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ttm-row padding_bottom_zero-section bg-layer-equal-height mt_30 clearfix" id="homesec4">
+                <div class="container p-0">
+                    <div class="row no-gutters">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="ttm-bg ttm-bg ttm-col-bgimage-yes col-bg-img-five ttm-left-span spacing-9">
+                                <div class="ttm-col-wrapper-bg-layer ttm-bg-layer">
+                                    <div class="ttm-col-wrapper-bg-layer-inner"></div>
+                                </div>
+                                <div class="layer-content">
+
+                                    <div class="section-title">
+                                        <div class="title-header">
+                                            <h3 style="color: #fff;">Our awesome features</h3>
+                                            <h2 class="title" style="color: #eeb21c; text-transform: uppercase;">Trading
+                                                Terminologies</h2>
+                                        </div>
+                                        <div class="title-desc" style="color: #fff;">
+                                            <p>
+                                                Botfolio works with the ideology of multiplying the capital and
+                                                investing in the future. We also work to make a person self dependent .
+                                                We also believe in the concept of multinational investment. We provide a
+                                                pathway for Gamers NFT for trade purchase and exchange in the gaming
+                                                world.
+                                            </p>
+                                            <p>
+                                                With modern technology our concepts have also been improvised. The
+                                                circulation and rotation of commodities in the utility market is highly
+                                                required. The gap created by the users has to be a smooth pathway.
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="padding_top20 padding_bottom35 res-991-padding_bottom0">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12" id="homesec4_img">
+
+                            <div class="ttm-bg ttm-col-bgimage-yes col-bg-img-six ttm-right-span">
+                                <div class="ttm-col-wrapper-bg-layer ttm-bg-layer">
+                                </div>
+                                <div class="layer-content">
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bg-layer-equal-height mt_30 clearfix" id="homesec5">
+                <div class="container" style="padding-bottom: 76px; padding-top: 33px;">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="section-title style2">
+                                <div class="title-header" style="text-align: center;">
+                                    <h3 style="color: #091732;">Projects</h3>
+                                    <h2 class="title" style="font-family: sans-serif;">
+                                        Blockchain enabled E-commerce platform</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-equal-height">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="featured-imagebox featured-imagebox-portfolio style1">
+                                <div>
+                                    <div class="featured-thumbnail">
+                                        <img class="img-fluid" src="images/Home/Sec05_01.png" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+
+                            <div class="section-title style2">
+                                <div class="title-desc">
+                                    <div>
+                                        <script
+                                            src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+                                        <lottie-player
+                                            src="https://lottie.host/7265da93-1014-42ff-9f4e-16dc8de39cd8/ylY3QmmeHb.json"
+                                            background="transparent" speed="1" style="width: 350px; height: 300px;" loop
+                                            autoplay></lottie-player>
+                                    </div>
+                                    <p style="font-size: 20px; color: #000; line-height: 32px; text-align: center;">
+                                        The latest buzz in technology is blockchain, which has the potential to
+                                        completely transform the e-commerce business.
+                                        Blockchain's ability to overcome e-commerce difficulties is undeniable,
+                                        from the elimination of intermediaries to simplified operations and decreased
+                                        complications.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+
+                            <div class="featured-imagebox featured-imagebox-portfolio style1">
+
+                                <div>
+
+                                    <div class="featured-thumbnail">
+                                        <img class="img-fluid" src="images/Home/Sec05_02.png" alt="image">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section class="ttm-row portfolio-section clearfix" style="display: none;">
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <div class="section-title style2">
+                                <div class="title-header">
+                                    <h3>Projects</h3>
+                                    <h2 class="title">We Make Unique Projects</h2>
+                                </div>
+                                <div class="title-desc">
+                                    <p>
+                                        Botfolio is a "integrated trading platform" that combines the trading of
+                                        Botfolio in a
+                                        secure and easy method with a variety of other services.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row row-equal-height">
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+
+                            <div class="featured-imagebox featured-imagebox-portfolio style1">
+
+                                <div class="ttm-box-view-overlay">
+
+                                    <div class="featured-thumbnail">
+                                        <img class="img-fluid" src="images/portfolio/portfolio-one-276x201.jpg"
+                                            alt="image">
+                                    </div>
+                                    <div class="featured-iconbox ttm-media-link">
+                                        <a class="ttm_prettyphoto ttm_image" title="Market Expansion"
+                                            data-rel="prettyPhoto" href="images/portfolio/portfolio-one.jpg"
+                                            tabindex="0">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="featured-imagebox featured-imagebox-portfolio style1">
+
+                                <div class="ttm-box-view-overlay">
+
+                                    <div class="featured-thumbnail">
+                                        <img class="img-fluid" src="images/portfolio/portfolio-five-276x201.jpg"
+                                            alt="image">
+                                    </div>
+                                    <div class="featured-iconbox ttm-media-link">
+                                        <a class="ttm_prettyphoto ttm_image" title="Market Expansion"
+                                            data-rel="prettyPhoto" href="images/portfolio/portfolio-five.jpg"
+                                            tabindex="0">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+                            <div class="featured-imagebox featured-imagebox-portfolio style1">
+
+                                <div class="ttm-box-view-overlay">
+
+                                    <div class="featured-thumbnail">
+                                        <img class="img-fluid" src="images/portfolio/portfolio-two-276x431.jpg"
+                                            alt="image">
+                                    </div>
+                                    <div class="featured-iconbox ttm-media-link">
+                                        <a class="ttm_prettyphoto ttm_image" title="Capital Management"
+                                            data-rel="prettyPhoto" href="images/portfolio/portfolio-two.jpg"
+                                            tabindex="0">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+
+                            <div class="featured-imagebox featured-imagebox-portfolio style1">
+
+                                <div class="ttm-box-view-overlay">
+
+                                    <div class="featured-thumbnail">
+                                        <img class="img-fluid" src="images/portfolio/portfolio-three-276x431.jpg"
+                                            alt="image">
+                                    </div>
+                                    <div class="featured-iconbox ttm-media-link">
+                                        <a class="ttm_prettyphoto ttm_image" title="Business Leadership"
+                                            data-rel="prettyPhoto" href="images/portfolio/portfolio-three.jpg"
+                                            tabindex="0">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6">
+
+                            <div class="featured-imagebox featured-imagebox-portfolio style1">
+
+                                <div class="ttm-box-view-overlay">
+
+                                    <div class="featured-thumbnail">
+                                        <img class="img-fluid" src="images/portfolio/portfolio-four-276x201.jpg"
+                                            alt="image">
+                                    </div>
+                                    <div class="featured-iconbox ttm-media-link">
+                                        <a class="ttm_prettyphoto ttm_image" title="Business Leadership"
+                                            data-rel="prettyPhoto" href="images/portfolio/portfolio-four.jpg"
+                                            tabindex="0">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="featured-imagebox featured-imagebox-portfolio style1">
+
+                                <div class="ttm-box-view-overlay">
+
+                                    <div class="featured-thumbnail">
+                                        <img class="img-fluid" src="images/portfolio/portfolio-six-276x201.jpg"
+                                            alt="image">
+                                    </div>
+                                    <div class="featured-iconbox ttm-media-link">
+                                        <a class="ttm_prettyphoto ttm_image" title="Capital Management"
+                                            data-rel="prettyPhoto" href="images/portfolio/portfolio-six.jpg"
+                                            tabindex="0">
+                                            <i class="fa fa-search"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer widget-footer ttm-bgcolor-darkgrey ttm-textcolor-white clearfix">
+
+            <div class="second-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 widget-area">
+                            <div class="widget widget_text clearfix">
+                                <img class="img-fluid" src="images/Home/Logo.png" alt="logo"
+                                    style="height: 65px; width: 240px; margin-left: -6px; margin-bottom: 14px;"><br>
+                                <div class="textwidget widget-text">
+                                    <p>
+                                        The need for intermediaries is eliminated because blockchain transactions happen
+                                        on a single network.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 widget-area" id="footer2">
+                            <div class="widget widget_text clearfix">
+                                <h3 class="widget-title">Social Media</h3>
+                                <div class="textwidget widget-text">
+                                    <p>
+                                        <i class="fa fa-envelope" style="color: #ffc01a;"></i> info@botfoliotrade.co
+                                    </p>
+                                    <p>
+                                        <i class="fa fa-envelope" style="color: #ffc01a;"></i>
+                                        support@botfoliotrade.co
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-footer-text copyright ttm-textcolor-white">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-lg-flex align-items-center justify-content-between text-center">
+                                <div class="order-1">
+                                    <div class="cpy-text">Copyright © 2023 Botfolio. All rights reserved.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <a id="totop" href="#top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+
+    </div>
+
+    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-migrate-3.3.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery-waypoints.js"></script>
+    <script src="js/jquery-validate.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/numinate.min.js"></script>
+    <script src="js/imagesloaded.min.js"></script>
+    <script src="js/jquery-isotope.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        window.onload = function () {
+            document.getElementById('button').onclick = function () {
+                document.getElementById('modal').style.display = "none"
+            };
+        };
+    </script>
+
+</body>
+
+
+</html>
